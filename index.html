@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="alpha_spriter.js"></script>
+        <style>
+            body {background:#9EC1E1; font-size:18px; margin:40px 40px 100px 40px;}
+            h2 {font-size: 24px;}
+            p {margin-bottom:20px;}
+            #element_id{width:225px; height:324px; display:inline-block;}
+        </style>
+    </head>
+    <body onload='alpha_spriter("images/header_show_lion_rgb.gif", "images/header_snow_lion_alpha.png", sample_settings, function(){alert("AAAAALRiGHT!")} )' >
+        <!--<img src="images/header_snow_lion.png" />-->
+        <h2>Hi!</h2>
+        <p>This is sample page of Alpha Spriter javascript plugin.</p>
+        <p>What we are doing here is making big picture with alpha size one fourth of usual png size.</p>
+        <p>Here are two sources: rgb saved as gif (10Kb) and alpha, saved as png8 (4 Kb):</p>
+        <p><img src="images/header_show_lion_rgb.gif" />, <img src="images/header_snow_lion_alpha.png" /></p>
+        <p>And here is what we got when we combine and splitting them via Alpha Spriter
+        <br />(first is div with background-color property, second is img):</p>
+        <p><div id="element_id"></div>, <img id="another_element_id" /></p>
+        <p>And this is png image we used before. Its size is 56 Kb:</p>
+        <p><img src="images/header_snow_lion.png" /></p>
+        <p>Thank you and donate</p>
+    </body>
+</html>
